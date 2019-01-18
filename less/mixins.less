@@ -1,1 +1,19 @@
 // Mixins Here
+
+// red border for positioning
+.test() {
+    border: 1px solid red;
+}
+
+// border raidus
+.border-radius (@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+// Parametric mixin for button
+.custom-btn (@button-bg, @font-color) {
+    background: @button-bg;
+    color: @font-color;
+}
